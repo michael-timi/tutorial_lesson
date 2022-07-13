@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:tutorial_app/screens/splashScreen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const TutorialApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class TutorialApp extends StatelessWidget {
+  const TutorialApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

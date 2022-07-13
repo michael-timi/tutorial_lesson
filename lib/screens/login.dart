@@ -85,7 +85,7 @@ class _LoginState extends State<Login> {
                             'Welcome back',
                             style: GoogleFonts.poppins(
                                 textStyle: const TextStyle(
-                              fontWeight: FontWeight.w600,
+                              fontWeight: FontWeight.w500,
                               fontSize: 28,
                               color: Color(0xff0D253C),
                             )),
@@ -140,23 +140,64 @@ class _LoginState extends State<Login> {
                             ),
                           ),
                           const SizedBox(height: 30),
-                          Container(
-                            height: 60,
-                            width: double.infinity,
-                            decoration: BoxDecoration(
-                                color: const Color(0xff376AED),
-                                borderRadius: BorderRadius.circular(12)),
-                            child: Center(
-                              child: Text(
-                                'LOGIN',
-                                style: GoogleFonts.poppins(
-                                    textStyle: const TextStyle(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 20,
-                                        color: Colors.white)),
+                          InkWell(
+                            onTap: () {
+                              print('login here');
+                            },
+                            child: Container(
+                              height: 60,
+                              width: double.infinity,
+                              decoration: BoxDecoration(
+                                  color: const Color(0xff376AED),
+                                  borderRadius: BorderRadius.circular(12)),
+                              child: Center(
+                                child: Text(
+                                  'LOGIN',
+                                  style: GoogleFonts.poppins(
+                                      textStyle: const TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 20,
+                                          color: Colors.white)),
+                                ),
                               ),
                             ),
-                          )
+                          ),
+                          const SizedBox(height: 30),
+                          InkWell(
+                            onTap: () {
+                              print('reset your password here');
+                            },
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Forgot your password?',
+                                  style: GoogleFonts.poppins(
+                                      textStyle: const TextStyle(
+                                          fontSize: 16, color: Colors.black)),
+                                ),
+                                const SizedBox(width: 20),
+                                Text(
+                                  'Reset here',
+                                  style: GoogleFonts.poppins(
+                                      textStyle: const TextStyle(
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 16,
+                                    color: Color(0xff376AED),
+                                  )),
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: 30),
+                          Center(
+                            child: Text(
+                              'OR SIGN IN WITH',
+                              style: GoogleFonts.poppins(
+                                  textStyle: const TextStyle(
+                                      fontSize: 13, color: Colors.black)),
+                            ),
+                          ),
                         ],
                       ),
                     ),
